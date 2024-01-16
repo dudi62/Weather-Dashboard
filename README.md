@@ -10,6 +10,22 @@ This is a weather dashboard that runs in the browser and features dynamically up
 - Displays a 5-day forecast including temperature, humidity, and wind speed.
 - Stores search history in the browser's local storage.
 
+## JavaScript Functionality
+
+The JavaScript functionality of this application is handled by `script.js` and is responsible for the dynamic behavior of the Weather Dashboard.
+
+- `script.js`: This script handles the interaction with the OpenWeatherMap API and the manipulation of the HTML document. Here are the main functionalities:
+
+  - **Fetch Weather Data**: When a city name is entered into the search box and the search button is clicked, a request is sent to the OpenWeatherMap API to fetch the current weather data and a 5-day forecast for that city.
+
+  - **Display Weather Data**: The fetched weather data is then used to dynamically update the HTML content of the page, displaying the current weather and the 5-day forecast.
+
+  - **Search History**: The script also manages the search history. When a city is searched, it is added to the search history which is displayed on the page. The search history is stored in the browser's local storage, so it persists across page reloads. When a city in the search history is clicked, the weather data for that city is fetched and displayed again.
+
+  - **Error Handling**: If there is an error in fetching the weather data (for example, if an invalid city name is entered), an error message is displayed to the user.
+
+Remember to replace `{API key}` in the API URL with your actual API key.
+
 ## Usage
 
 1. Enter a city name in the search box and click the search button.
@@ -30,4 +46,4 @@ The application uses `localStorage` to store the search history. The search hist
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License
