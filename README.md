@@ -2,7 +2,7 @@
 
 This is a weather dashboard that runs in the browser and features dynamically updated HTML and CSS.
 
-![Screenshot of application](./assets/images/screenshot.png)
+![2024-01-16](https://github.com/dudi62/Weather-Dashboard/assets/63518444/f9a847c3-bdfe-4b54-8d58-0a9cf19e6ae7)
 
 ## Features
 
@@ -18,7 +18,7 @@ This is a weather dashboard that runs in the browser and features dynamically up
 
 ## Live Demo
 
-You can see the live demo of the application at 
+You can see the live demo of the application at https://dudi62.github.io/Weather-Dashboard/
 
 ## API
 
