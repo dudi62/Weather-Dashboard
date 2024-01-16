@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <header class="container-fluid text-center text-white bg-dark p-2">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <div class="container" style="max-width: 1400px">
+    <div class="row">
+      <aside class="col-lg-3 pb-3">
+        <h2 id="form-heading" class="mt-1 h3">
+          Search for a City:
+        </h2>
+        <form id="search-form">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control weather-search" id="search-input"  aria-labelledby="form-heading" aria-controls="today forecast" />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary" id="search-button" aria-label="submit search">Search</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="list-group" id="history"></div>
+      </aside>
+
+      <div class="col-lg-9 pb-3">
+        <section id="today" class="mt-3" role="region" aria-live="polite"></section>
+        <div class="forecast-container">
+          <div class="forecast-row" id="forecast" role="region" aria-live="polite">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

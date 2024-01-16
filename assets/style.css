@@ -1,0 +1,58 @@
+body {
+    background-color: #e9ecef;
+  }
+  .weather-header {
+    background-color: #553a40;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  .weather-search {
+    margin-bottom: 15px;
+  }
+  .search-button {
+    background-color: #007bff;
+    color: white;
+  }
+  .weather-hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .list-group-item {
+    background-color: #f8f9fa;
+  }
+  .list-group-item:hover {
+    background-color: #eee6ea;
+  }
+  #today {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .forecast-card {
+    background-color: #007eff;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .forecast-container {
+    background-color: #343a40; 
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .forecast-item {
+    background-color: #007eff; 
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    flex-basis: calc(20% - 20px); 
+    text-align: center;
+  }
+  
+  .forecast-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
